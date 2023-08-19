@@ -25,7 +25,7 @@ function App() {
     })
     .then(res => res.json())
     .then(data => {
-      if (data) {
+      if (data.success) {
         localStorage.setItem('user', JSON.stringify(data));
         setUser(data);
         fetchProfile(data.id);
