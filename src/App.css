@@ -1,38 +1,93 @@
-.App {
-  text-align: center;
+@import url('https://fonts.googleapis.com/css2?family=Mulish&display=swap');
+*{
+    margin:0;
+    padding:0;
+    font-family: 'Mulish', sans-serif;
+
+}
+body{
+  width:100vw;
+  height:100vh;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
-}
-
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
-}
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
+.App{
+ 
+   background: url('./1.png');
+  
+   background-repeat: no-repeat;
+  
+   background-position: center;
+  background-size: cover;
+  display:flex;
   justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+  align-items: center;
+  
+  background-color:whitesmoke;
 }
-
-.App-link {
-  color: #61dafb;
+.login-form,.user-Profile{
+  margin-top:10%;
+  background-color:white;
+  border:2px solid white;
+  padding:80px;
+  margin-bottom: 20px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Add box shadow */
+  
 }
+h3{
+  margin: 10px 0px;
+}
+input{
+   width:200px;
+   margin:10px 0px;
+   padding:10px;
+  border:1px solid gray;
+  border-radius: 5px;
+  outline: 0;
+}
+label{
+  color:gray;
+  font-size:12px;
+}
+button{
+  width:225px;
+  background-color: blue;
+  color:white;
+  padding:10px;
+  font-weight: bold;
+  border:1px solid blue;
+  border-radius: 5px;
+  outline: 0;
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
+}
+.image{
+  margin:10px auto;
+  width:100px;
+  
+  object-fit: cover;
+  
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 10px;
+}
+.image img{
+  width:100%;
+  height:100%;
+  border:2px solid blue;
+  border-radius: 48%;
+  margin:2px 10px;
+
+}
+.user-Profile p{
+  margin-bottom: 10px;
+}
+@media  screen and (max-width:460px) {
+  .App{
+      background-size: contain;
+     background-color: white;
   }
-  to {
-    transform: rotate(360deg);
+  .login-form,.user-Profile{
+    padding: 40px;
   }
+  
 }
